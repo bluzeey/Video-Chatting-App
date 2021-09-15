@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react'
+import { Typography,AppBar } from '@material-ui/core'
+import {Videoplayer} from './components/VideoPlayer'
+const App = () => {
+    return (
+        <div>
+            <AppBar position="static" color="inherit">
+                <Typography variant="h2" align="center">Video Chat</Typography>
+            </AppBar>
+        </div>
+    )
 }
 
-export default App;
+export default App
