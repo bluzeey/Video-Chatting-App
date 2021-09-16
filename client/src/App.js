@@ -2,7 +2,7 @@ import React from 'react'
 import { Typography,AppBar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core'
 import Notifications from './components/Notifications'
-import Options from './components/Options'
+import Sidebar from './components/Sidebar'
 import VideoPlayer from './components/VideoPlayer'
 
 const useStyles = makeStyles((theme) => ({
@@ -39,9 +39,9 @@ const App = () => {
                 <Typography variant="h2" align="center">Video Chat</Typography>
             </AppBar>
             <VideoPlayer/>
-            <Options>
+            <Sidebar>
                 <Notifications/>
-            </Options>
+            </Sidebar>
         </div>
     )
 }
